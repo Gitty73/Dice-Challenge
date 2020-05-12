@@ -8,7 +8,6 @@ var firstRandomNumber = Math.random();
 var secondRandomNumber = Math.random();
     secondRandomNumber = Math.floor((secondRandomNumber * 6) + 1);
 
-
 if(firstRandomNumber === 1){
   firstImage.setAttribute("src", "images/dice1.png");
 } else if (firstRandomNumber === 2){
@@ -38,10 +37,10 @@ if(secondRandomNumber === 1){
 }
 
 
-if(firstRandomNumber > secondRandomNumber){
-  H1.innerHTML = "<h1>Player 1 Wins <img src='images/flag.png' style = 'width: 10%'></h1>";
-} else if(firstRandomNumber < secondRandomNumber){
-  H1.innerHTML = "<h1><img src='images/flag.png' style = 'width: 10%'> Player 2 Wins</h1>";
+if(firstRandomNumber < secondRandomNumber){
+  H1.innerHTML = "<h1>Player 2 Wins!  <img src='images/flag.png' style = 'width: 10%'></h1>";
+} else if(firstRandomNumber > secondRandomNumber){
+  H1.innerHTML = "<h1><img src='images/flag.png' style = 'width: 10%'> Player 1 Wins!</h1>";
 } else {
-  H1.innerHTML = "<h1>Oops! Its Tie</h1>";
+  H1.innerHTML = "<h1>Oops! Its a Tie.</h1>";
 }
